@@ -1,9 +1,6 @@
 # Dependencies
 package-lock.json
 
-# Backups
-.zshrc.backup*
-
 # Sensitive
 .ssh/
 .claude.json
