@@ -22,3 +22,7 @@ claude mcp add n8n --scope user \
   -e N8N_API_KEY=<your-key> \
   -- node /path/to/projects/n8n-mcp-server/server.js
 ```
+
+## License
+
+[Apache 2.0](LICENSE)
