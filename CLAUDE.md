@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**GitHub:** https://github.com/Lars-FivMo/home
+
 ## Environment
 
 - **Node.js**: managed via `nvm` (sourced in `.zshrc`)
