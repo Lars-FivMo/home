@@ -32,6 +32,7 @@ OneDrive
 .claude/downloads/
 .claude/file-history/
 .claude/history.jsonl
+.claude/settings.local.json
 .claude/mcp-needs-auth-cache.json
 .claude/plans/
 .claude/plugins/
