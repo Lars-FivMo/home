@@ -8,10 +8,10 @@ Personal dotfiles and projects for macOS.
 |------|-------------|
 | `.zshrc` | Zsh config — nvm, pipx, Homebrew, aliases |
 | `.zprofile` | Zsh login profile |
+| `.zshrc.backup.*` | Zsh config backups |
 | `.gitconfig` | Git user config |
-| `CLAUDE.md` | Guidance for Claude Code when working in this repo |
 | `.claude/settings.json` | Claude Code settings |
-| `projects/` | Individual projects — see [n8n-mcp-server](https://github.com/Lars-FivMo/n8n-mcp-server) |
+| `CLAUDE.md` | Guidance for Claude Code when working in this repo |
 
 ## License
 
