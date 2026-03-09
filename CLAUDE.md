@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Python**: venvs stored in `~/venvs/` — activate whisper env with `whisperenv` alias
 - **Homebrew**: available at `/opt/homebrew/bin/brew`
 
-## n8n MCP Server (`~/projects/n8n-mcp-server/`)
+## n8n MCP Server (`~/projects/n8n-mcp-server/` — [GitHub](https://github.com/Lars-FivMo/n8n-mcp-server))
 
 A Model Context Protocol (MCP) server that exposes n8n workflow automation as tools for Claude. Entry point: `server.js`.
 
