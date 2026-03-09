@@ -4,6 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **GitHub:** https://github.com/Lars-FivMo/home
 
+## Projects
+
+All projects live in `~/projects/`:
+
+| Project | Repo |
+|---------|------|
+| `n8n-mcp-server` | https://github.com/Lars-FivMo/n8n-mcp-server |
+| `profile-readme` | https://github.com/Lars-FivMo/Lars-FivMo |
+| `MoodTracker` | https://github.com/Lars-FivMo/MoodTracker |
+| `Stimmunsbarometer` | https://github.com/Lars-FivMo/Stimmunsbarometer |
+| `moltbot` | https://github.com/Lars-FivMo/moltbot |
+
 ## Environment
 
 - **Node.js**: managed via `nvm` (sourced in `.zshrc`)
