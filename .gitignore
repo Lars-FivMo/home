@@ -1,3 +1,6 @@
+# Backups
+.zshrc.backup*
+
 # Sensitive
 .ssh/
 .claude.json
