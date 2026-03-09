@@ -1,3 +1,6 @@
+# Dependencies
+package-lock.json
+
 # Backups
 .zshrc.backup*
 
