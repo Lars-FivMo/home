@@ -11,7 +11,7 @@ Personal dotfiles and projects for macOS.
 | `.gitconfig` | Git user config |
 | `CLAUDE.md` | Guidance for Claude Code when working in this repo |
 | `.claude/settings.json` | Claude Code settings |
-| `projects/` | Individual project repos (e.g. n8n-mcp-server) |
+| `projects/` | Individual projects — see [n8n-mcp-server](https://github.com/Lars-FivMo/n8n-mcp-server) |
 
 ## License
 
