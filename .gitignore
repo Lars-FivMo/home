@@ -1,0 +1,32 @@
+# Sensitive
+.ssh/
+.claude.json
+.zsh_history
+.bash_history
+.sqlite_history
+
+# Large / system
+Library/
+node_modules/
+.Trash/
+.DS_Store
+.dropbox/
+.cache/
+.npm/
+.nvm/
+venvs/
+pinokio/
+*.zip
+
+# Cloud storage
+Dropbox
+Google\ Drive
+OneDrive
+
+# App data
+.docker/
+.ollama/
+.codex/
+.cursor/
+.local/
+.config/
