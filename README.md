@@ -10,6 +10,7 @@ Personal dotfiles and projects for macOS.
 | `.zprofile` | Zsh login profile |
 | `.gitconfig` | Git user config |
 | `CLAUDE.md` | Guidance for Claude Code when working in this repo |
+| `.claude/settings.json` | Claude Code settings |
 | `projects/n8n-mcp-server/` | MCP server exposing n8n workflows to Claude |
 
 ## n8n MCP Server
