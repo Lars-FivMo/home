@@ -15,6 +15,7 @@ All projects live in `~/projects/`:
 | `MoodTracker` | https://github.com/Lars-FivMo/MoodTracker |
 | `Stimmunsbarometer` | https://github.com/Lars-FivMo/Stimmunsbarometer |
 | `moltbot` | https://github.com/Lars-FivMo/moltbot |
+| `Buddy` | https://github.com/Lars-FivMo/buddy |
 
 ## Environment
 

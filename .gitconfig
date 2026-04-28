@@ -1,6 +1,6 @@
 [user]
 	name = LarsFvM
-	email = lars@fvm-studio.com
+	email = 207698413+Lars-FivMo@users.noreply.github.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
