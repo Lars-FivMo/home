@@ -27,6 +27,16 @@ cd "$TARGET"
 echo "→ Installiere Harrys Team-Integration nach: $TARGET"
 echo "→ FVM-OS (160 Agenten) erwartet unter:      $FVM_OS"
 
+# 0) FVM-OS noch nicht auf dem Server? Von GitHub klonen (privates Repo —
+#    nutzt die Git-Credentials, mit denen der VPS auch fvm-studio-aios zieht).
+if [ ! -d "$FVM_OS" ]; then
+  echo "→ FVM-OS fehlt unter $FVM_OS — klone von GitHub …"
+  git clone git@github.com:Lars-FivMo/FVM-OS.git "$FVM_OS" 2>/dev/null \
+    || git clone https://github.com/Lars-FivMo/FVM-OS.git "$FVM_OS" \
+    || { echo "✗ Klonen fehlgeschlagen — bitte FVM-OS manuell nach $FVM_OS klonen und erneut ausführen."; exit 1; }
+  echo "  ✓ FVM-OS geklont nach $FVM_OS"
+fi
+
 # 1) Dateien installieren — lokale Kopie bevorzugt, sonst Download von GitHub
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]:-/nonexistent}")" 2>/dev/null && pwd || true)"
 fetch() {
