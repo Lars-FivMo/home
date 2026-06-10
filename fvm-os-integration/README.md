@@ -16,6 +16,20 @@ Lars → Telegram/Claude Code/Voice
                  → Fleet-Dispatch  → parallele Ausführung → Synthese → Harry
 ```
 
+## Schnellinstallation (1 Befehl auf dem VPS)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Lars-FivMo/home/claude/harry-160-agents-collab-j0uu4a/fvm-os-integration/install.sh \
+  | bash -s -- /pfad/zu/fvm-studio-aios /pfad/zu/fvm-os
+```
+
+Erledigt alle Schritte automatisch: Dateien installieren, `.env`
+(`FVM_OS_PATH`), `CLAUDE.md`-Team-Abschnitt, `commander.py` patchen
+(mit Backup `commander.py.bak`, Fallback komplett in `try/except` —
+schlägt etwas fehl, verhält sich Harry exakt wie vorher), Smoke-Test,
+Harry-Neustart. Der Installer ist idempotent — mehrfaches Ausführen ist
+unschädlich. Nach Merge des PR den Branch in der URL durch `main` ersetzen.
+
 ## Paket-Inhalt
 
 | Datei | Zweck | Zielort in `fvm-studio-aios` |
@@ -24,6 +38,7 @@ Lars → Telegram/Claude Code/Voice
 | `scripts/fleet_registry.py` | Lädt & matcht die 160 FVM-OS-Agenten | `scripts/fleet_registry.py` |
 | `scripts/fleet_dispatch.py` | Paralleler Dispatch an die Flotte | `scripts/fleet_dispatch.py` |
 | `PATCH-commander.md` | Verdrahtung in `commander.py` + `CLAUDE.md` | manuell anwenden |
+| `install.sh` | One-Shot-Installer (alle Schritte automatisch) | auf dem VPS ausführen |
 
 ## Installation (auf dem VPS, im `fvm-studio-aios`-Checkout)
 
