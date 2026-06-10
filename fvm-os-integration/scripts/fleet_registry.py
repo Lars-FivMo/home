@@ -15,9 +15,11 @@ Als Modul (commander.py):
   kandidaten = match("Aufgabe...", top_n=3)
 """
 
+import contextlib
 import json
 import os
 import re
+import signal
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -131,24 +133,38 @@ def _tokens(text: str) -> set:
     return {t for t in re.findall(r"[a-zäöüß0-9]{3,}", text.lower()) if t not in _STOPWORDS}
 
 
+def _overlap(task_tokens: set, agent_tokens: set) -> int:
+    """Treffer inkl. Präfix-Vergleich — fängt deutsche Komposita/Flexion
+    ("vertrag" ↔ "vertrags", "agenten" ↔ "agent") ohne echten Stemmer ab."""
+    count = 0
+    for t in task_tokens:
+        if t in agent_tokens or (
+            len(t) >= 4 and any(len(o) >= 4 and (t.startswith(o) or o.startswith(t)) for o in agent_tokens)
+        ):
+            count += 1
+    return count
+
+
 def match(task: str, fleet: list = None, top_n: int = 3) -> list:
     """Top-N Agenten für eine Aufgabe — Wortüberlappung mit Name/Beschreibung/Keywords."""
     fleet = fleet if fleet is not None else load_fleet()
     task_tokens = _tokens(task)
     scored = []
     for agent in fleet:
-        agent_tokens = _tokens(agent.routing_text())
-        overlap = task_tokens & agent_tokens
-        if not overlap:
+        hits = _overlap(task_tokens, _tokens(agent.routing_text()))
+        if not hits:
             continue
         # Keyword-Treffer zählen doppelt — sie sind die explizite Routing-Absicht
-        keyword_hits = task_tokens & _tokens(" ".join(agent.keywords))
-        scored.append((len(overlap) + len(keyword_hits), agent))
+        keyword_hits = _overlap(task_tokens, _tokens(" ".join(agent.keywords)))
+        scored.append((hits + keyword_hits, agent))
     scored.sort(key=lambda pair: pair[0], reverse=True)
     return [agent for _, agent in scored[:top_n]]
 
 
 def main() -> int:
+    # "| head" soll keinen Traceback erzeugen (BrokenPipe)
+    with contextlib.suppress(Exception):
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)
     cmd = sys.argv[1] if len(sys.argv) > 1 else "list"
     try:
         if cmd == "list":

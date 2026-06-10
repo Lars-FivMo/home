@@ -18,6 +18,10 @@ RAW="https://raw.githubusercontent.com/Lars-FivMo/home/${BRANCH}/fvm-os-integrat
 TARGET="${1:-$PWD}"
 FVM_OS="${2:-/opt/fvm-os}"
 
+# Paket-Quellverzeichnis VOR jedem cd bestimmen (leer, wenn per curl|bash gestreamt)
+SRC="$(cd "$(dirname "${BASH_SOURCE[0]:-/nonexistent}")" 2>/dev/null && pwd || true)"
+[ "$SRC" = "/" ] && SRC=""
+
 if [ ! -f "$TARGET/scripts/commander.py" ] && [ ! -f "$TARGET/CLAUDE.md" ]; then
   echo "✗ $TARGET sieht nicht nach einem fvm-studio-aios-Checkout aus (scripts/commander.py fehlt)."
   echo "  Aufruf: install.sh /pfad/zu/fvm-studio-aios [/pfad/zu/fvm-os]"
@@ -47,7 +51,6 @@ if [ ! -d "$FVM_OS" ]; then
 fi
 
 # 1) Dateien installieren — lokale Kopie bevorzugt, sonst Download von GitHub
-SRC="$(cd "$(dirname "${BASH_SOURCE[0]:-/nonexistent}")" 2>/dev/null && pwd || true)"
 fetch() {
   if [ -n "$SRC" ] && [ -f "$SRC/$1" ]; then cp "$SRC/$1" "$1"; else curl -fsSL "$RAW/$1" -o "$1"; fi
   echo "  ✓ $1"
@@ -56,6 +59,22 @@ mkdir -p scripts context
 fetch scripts/fleet_registry.py
 fetch scripts/fleet_dispatch.py
 fetch context/harry-team.md
+
+# 1b) Flotten-Katalog (160 Agenten) nach FVM-OS — ein vorhandener Katalog
+#     wird nie überschrieben (eigene Anpassungen bleiben erhalten)
+if [ -f "$FVM_OS/agents/manifest.json" ]; then
+  echo "  ✓ Flotten-Katalog bereits vorhanden: $FVM_OS/agents/manifest.json"
+else
+  mkdir -p "$FVM_OS/agents"
+  if [ -n "$SRC" ] && [ -f "$SRC/agents/manifest.json" ]; then
+    cp "$SRC/agents/manifest.json" "$FVM_OS/agents/manifest.json"
+  else
+    curl -fsSL "$RAW/agents/manifest.json" -o "$FVM_OS/agents/manifest.json" \
+      || echo "  ! Katalog-Download fehlgeschlagen — der Smoke-Test unten wird das zeigen"
+  fi
+  [ -f "$FVM_OS/agents/manifest.json" ] \
+    && echo "  ✓ Flotten-Katalog (160 Agenten) installiert: $FVM_OS/agents/manifest.json"
+fi
 
 # 2) .env — FVM_OS_PATH setzen (nur wenn noch nicht vorhanden)
 if grep -qs '^FVM_OS_PATH=' .env; then
@@ -112,9 +131,10 @@ PYEOF
 
 # 5) Smoke-Test: lädt die Registry die Flotte?
 echo "→ Smoke-Test der Fleet-Registry:"
-if FVM_OS_PATH="$FVM_OS" python3 scripts/fleet_registry.py list 2>&1 | head -5; then
-  true
+if REG_OUT="$(FVM_OS_PATH="$FVM_OS" python3 scripts/fleet_registry.py list 2>&1)"; then
+  printf '%s\n' "$REG_OUT" | head -4
 else
+  printf '%s\n' "$REG_OUT" | head -4
   echo "  ! Registry-Test fehlgeschlagen — liegt FVM-OS wirklich unter $FVM_OS ?"
   echo "    Pfad korrigieren: FVM_OS_PATH in .env anpassen, dann erneut testen."
 fi
@@ -128,7 +148,7 @@ elif command -v systemctl >/dev/null 2>&1; then
   if systemctl list-units --all --no-legend --plain 'command-bot.service' 2>/dev/null | grep -q command-bot; then
     UNIT="command-bot.service"
   else
-    UNIT="$(systemctl list-units --all --no-legend --plain '*harry*' 2>/dev/null | awk '{print $1}' | head -1)"
+    UNIT="$(systemctl list-units --all --no-legend --plain '*harry*' 2>/dev/null | awk '{print $1}' | head -1 || true)"
   fi
   if [ -n "$UNIT" ]; then
     systemctl restart "$UNIT" && echo "  ✓ systemd-Service $UNIT neu gestartet" \

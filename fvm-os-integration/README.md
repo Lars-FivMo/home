@@ -39,6 +39,8 @@ unschädlich. Nach Merge des PR den Branch in der URL durch `main` ersetzen.
 | `scripts/fleet_dispatch.py` | Paralleler Dispatch an die Flotte | `scripts/fleet_dispatch.py` |
 | `PATCH-commander.md` | Verdrahtung in `commander.py` + `CLAUDE.md` | manuell anwenden |
 | `install.sh` | One-Shot-Installer (alle Schritte automatisch) | auf dem VPS ausführen |
+| `agents/manifest.json` | Der Flotten-Katalog: 160 Agenten, 16 Abteilungen | `$FVM_OS_PATH/agents/manifest.json` |
+| `scripts/generate_fleet.py` | Generator für den Katalog (Quelle der 160 Agenten) | bleibt im Paket |
 
 ## Installation (auf dem VPS, im `fvm-studio-aios`-Checkout)
 
