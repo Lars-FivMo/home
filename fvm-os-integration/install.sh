@@ -124,7 +124,12 @@ if command -v docker >/dev/null 2>&1 && ls docker-compose.y*ml compose.y*ml >/de
   docker compose restart harry scheduler && echo "  ✓ Harry + Scheduler neu gestartet" \
     || echo "  ! Neustart fehlgeschlagen — manuell: docker compose restart harry scheduler"
 elif command -v systemctl >/dev/null 2>&1; then
-  UNIT="$(systemctl list-units --all --no-legend --plain '*harry*' 2>/dev/null | awk '{print $1}' | head -1)"
+  # Harrys Bot läuft auf dem VPS als command-bot.service ("FVM Command Bot (Harry)")
+  if systemctl list-units --all --no-legend --plain 'command-bot.service' 2>/dev/null | grep -q command-bot; then
+    UNIT="command-bot.service"
+  else
+    UNIT="$(systemctl list-units --all --no-legend --plain '*harry*' 2>/dev/null | awk '{print $1}' | head -1)"
+  fi
   if [ -n "$UNIT" ]; then
     systemctl restart "$UNIT" && echo "  ✓ systemd-Service $UNIT neu gestartet" \
       || echo "  ! Neustart von $UNIT fehlgeschlagen — manuell prüfen: systemctl status $UNIT"

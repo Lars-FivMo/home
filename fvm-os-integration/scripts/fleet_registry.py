@@ -89,7 +89,8 @@ def _from_manifest(path: Path) -> list:
 def _from_markdown_dir(root: Path) -> list:
     fleet = []
     for md in sorted(root.rglob("*.md")):
-        if md.name.upper() in ("README.MD", "INDEX.MD"):
+        # "._*" sind AppleDouble-Reste von macOS-Kopien, keine Agenten
+        if md.name.startswith("._") or md.name.upper() in ("README.MD", "INDEX.MD"):
             continue
         meta, body = _parse_frontmatter(md.read_text(encoding="utf-8"))
         tools = meta.get("tools", [])
