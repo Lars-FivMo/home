@@ -27,13 +27,22 @@ cd "$TARGET"
 echo "→ Installiere Harrys Team-Integration nach: $TARGET"
 echo "→ FVM-OS (160 Agenten) erwartet unter:      $FVM_OS"
 
-# 0) FVM-OS noch nicht auf dem Server? Von GitHub klonen (privates Repo —
-#    nutzt die Git-Credentials, mit denen der VPS auch fvm-studio-aios zieht).
+# 0) FVM-OS noch nicht auf dem Server? Von GitHub klonen. Privates Repo —
+#    darum zuerst die Remote-URL des fvm-studio-aios-Checkouts wiederverwenden
+#    (enthält bereits funktionierende Credentials/Token), dann SSH, dann HTTPS.
 if [ ! -d "$FVM_OS" ]; then
   echo "→ FVM-OS fehlt unter $FVM_OS — klone von GitHub …"
-  git clone git@github.com:Lars-FivMo/FVM-OS.git "$FVM_OS" 2>/dev/null \
+  DERIVED_URL=""
+  if git -C "$TARGET" remote get-url origin >/dev/null 2>&1; then
+    DERIVED_URL="$(git -C "$TARGET" remote get-url origin | sed 's#[^/]*$#FVM-OS.git#')"
+  fi
+  { [ -n "$DERIVED_URL" ] && git clone "$DERIVED_URL" "$FVM_OS" 2>/dev/null; } \
+    || git clone git@github.com:Lars-FivMo/FVM-OS.git "$FVM_OS" 2>/dev/null \
     || git clone https://github.com/Lars-FivMo/FVM-OS.git "$FVM_OS" \
-    || { echo "✗ Klonen fehlgeschlagen — bitte FVM-OS manuell nach $FVM_OS klonen und erneut ausführen."; exit 1; }
+    || { echo "✗ Klonen fehlgeschlagen — der VPS hat keinen Git-Zugriff auf das private Repo FVM-OS."
+         echo "  Lösung: Deploy-Key/Token für Lars-FivMo/FVM-OS hinterlegen oder manuell klonen:"
+         echo "  git clone <url-mit-zugriff> $FVM_OS  — danach diesen Installer erneut ausführen."
+         exit 1; }
   echo "  ✓ FVM-OS geklont nach $FVM_OS"
 fi
 
@@ -110,10 +119,18 @@ else
   echo "    Pfad korrigieren: FVM_OS_PATH in .env anpassen, dann erneut testen."
 fi
 
-# 6) Harry neu starten
+# 6) Harry neu starten — docker compose, sonst passenden systemd-Service suchen
 if command -v docker >/dev/null 2>&1 && ls docker-compose.y*ml compose.y*ml >/dev/null 2>&1; then
   docker compose restart harry scheduler && echo "  ✓ Harry + Scheduler neu gestartet" \
     || echo "  ! Neustart fehlgeschlagen — manuell: docker compose restart harry scheduler"
+elif command -v systemctl >/dev/null 2>&1; then
+  UNIT="$(systemctl list-units --all --no-legend --plain '*harry*' 2>/dev/null | awk '{print $1}' | head -1)"
+  if [ -n "$UNIT" ]; then
+    systemctl restart "$UNIT" && echo "  ✓ systemd-Service $UNIT neu gestartet" \
+      || echo "  ! Neustart von $UNIT fehlgeschlagen — manuell prüfen: systemctl status $UNIT"
+  else
+    echo "  → Kein Harry-Service gefunden — Harry manuell neu starten."
+  fi
 else
   echo "  → Kein docker compose gefunden — Harry manuell neu starten."
 fi

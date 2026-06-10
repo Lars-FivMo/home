@@ -149,20 +149,24 @@ def match(task: str, fleet: list = None, top_n: int = 3) -> list:
 
 def main() -> int:
     cmd = sys.argv[1] if len(sys.argv) > 1 else "list"
-    if cmd == "list":
-        fleet = load_fleet()
-        print(f"{len(fleet)} Agenten geladen aus {FVM_OS_PATH}")
-        for agent in fleet:
-            print(f"  {agent.name:<30} {agent.description[:70]}")
-    elif cmd == "match" and len(sys.argv) > 2:
-        task = " ".join(sys.argv[2:])
-        hits = match(task)
-        if not hits:
-            print("Kein passender Agent — Harry übernimmt selbst.")
-        for agent in hits:
-            print(f"  {agent.name:<30} {agent.description[:70]}")
-    else:
-        print(__doc__)
+    try:
+        if cmd == "list":
+            fleet = load_fleet()
+            print(f"{len(fleet)} Agenten geladen aus {FVM_OS_PATH}")
+            for agent in fleet:
+                print(f"  {agent.name:<30} {agent.description[:70]}")
+        elif cmd == "match" and len(sys.argv) > 2:
+            task = " ".join(sys.argv[2:])
+            hits = match(task)
+            if not hits:
+                print("Kein passender Agent — Harry übernimmt selbst.")
+            for agent in hits:
+                print(f"  {agent.name:<30} {agent.description[:70]}")
+        else:
+            print(__doc__)
+            return 1
+    except FileNotFoundError as error:
+        print(f"✗ {error}")
         return 1
     return 0
 
