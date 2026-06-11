@@ -24,6 +24,8 @@ import subprocess
 import sys
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from functools import lru_cache
+from pathlib import Path
 
 from fleet_registry import load_fleet, match  # noqa: F401  (Re-Export für commander.py)
 
@@ -34,16 +36,38 @@ MAX_TOKENS = int(os.environ.get("FLEET_MAX_TOKENS", "2048"))
 TIMEOUT_S = int(os.environ.get("FLEET_TIMEOUT_S", "120"))
 MAX_PARALLEL = int(os.environ.get("FLEET_MAX_PARALLEL", "5"))
 
+# Diese Dateien (relativ zum aios-Workspace) bekommt jeder Flotten-Agent als
+# Briefing über FVM-Studio mit — so kennt die Flotte Firma, Angebot und Stack.
+CONTEXT_FILES = os.environ.get(
+    "FLEET_CONTEXT_FILES", "context/fvm-studio.md,context/business-info.md"
+)
+CONTEXT_MAX_CHARS = int(os.environ.get("FLEET_CONTEXT_MAX_CHARS", "6000"))
+
+
+@lru_cache(maxsize=1)
+def _studio_briefing() -> str:
+    parts = []
+    for rel in CONTEXT_FILES.split(","):
+        path = Path(rel.strip())
+        if path.is_file():
+            parts.append(path.read_text(encoding="utf-8", errors="ignore").strip())
+    return "\n\n".join(parts)[:CONTEXT_MAX_CHARS]
+
 
 def _system_prompt(agent) -> str:
-    if agent.prompt:
-        return agent.prompt
-    return (
+    base = agent.prompt or (
         f"Du bist {agent.name}, Spezialist im FVM-Studio-Team von Harry (COO). "
         f"Dein Fachgebiet: {agent.description or 'siehe Aufgabenstellung'}. "
         "Antworte präzise, auf Deutsch, ohne Füllwörter — dein Ergebnis geht an "
         "Harry zur Synthese, nicht direkt an Lars."
     )
+    briefing = _studio_briefing()
+    if briefing:
+        base += (
+            "\n\n## Über FVM-Studio (dein Auftraggeber)\n"
+            "Nutze diesen Kontext für alle Antworten:\n\n" + briefing
+        )
+    return base
 
 
 def _call_api(agent, task: str) -> str:

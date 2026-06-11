@@ -61,6 +61,8 @@ FVM_OS_PATH=/opt/fvm-os        # Checkout/Installationspfad von FVM-OS
 # FLEET_BACKEND=cli            # optional: claude CLI statt API
 # FLEET_MODEL=...              # optional: Modell-Override für Flotten-Calls
 # FLEET_MAX_PARALLEL=5         # optional: paralleler Fan-out-Deckel
+# FLEET_CONTEXT_FILES=context/fvm-studio.md,context/business-info.md
+#                              # Briefing über FVM-Studio für jeden Flotten-Agenten
 ```
 
 ## 4. Smoke-Test
