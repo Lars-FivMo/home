@@ -11,6 +11,7 @@ Personal dotfiles and projects for macOS.
 | `.zshrc.backup.*` | Zsh config backups |
 | `.gitconfig` | Git user config |
 | `.claude/settings.json` | Claude Code settings |
+| `.claude/skills/` | Global (user-scope) Claude Code skills |
 | `CLAUDE.md` | Guidance for Claude Code when working in this repo |
 
 ## License

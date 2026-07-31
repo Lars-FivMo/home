@@ -16,6 +16,14 @@ All projects live in `~/projects/`:
 | `Stimmunsbarometer` | https://github.com/Lars-FivMo/Stimmunsbarometer |
 | `moltbot` | https://github.com/Lars-FivMo/moltbot |
 
+## Global Skills (`~/.claude/skills/`)
+
+Skills stored here are user-scope — available in every project, not just this repo.
+
+| Skill | Purpose |
+|-------|---------|
+| `grill-me` | Interviews the user about a project/feature until real alignment exists, then writes an alignment document. Alignment phase of the KI-Developer-Loop. |
+
 ## Environment
 
 - **Node.js**: managed via `nvm` (sourced in `.zshrc`)
