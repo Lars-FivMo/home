@@ -66,8 +66,11 @@ mit dem schreiben, was da ist, und offene Punkte explizit als offen markieren.
 
 ### 4. Alignment-Dokument schreiben
 
-Ablageort: `alignment/<thema>.md` im Projekt (oder wo der Nutzer es haben will).
-Wenn es schon `plans/` oder `docs/` gibt, dorthin einordnen statt eine neue Konvention zu erfinden.
+Ablageort: `plans/<thema>-alignment.md` im Projekt. `plans/` anlegen, falls es noch nicht existiert.
+
+Nach der Implementierung gehört die Datei gelöscht oder nach `plans/done/` archiviert —
+die Wahrheit steckt dann im Code, und veraltete Markdowns verwirren spätere Iterationen.
+Sie ist im Commit sicher aufgehoben.
 
 Struktur:
 
