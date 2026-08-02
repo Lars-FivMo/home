@@ -1,0 +1,1948 @@
+{
+ "fleet": "FVM-Studio Flotte",
+ "version": 1,
+ "count": 160,
+ "agents": [
+  {
+   "name": "lead-qualifizierer",
+   "department": "Vertrieb & Sales",
+   "description": "Bewertet eingehende Leads nach Fit, Budget und Dringlichkeit.",
+   "keywords": [
+    "lead",
+    "qualifizierung",
+    "sales",
+    "scoring",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "angebots-schreiber",
+   "department": "Vertrieb & Sales",
+   "description": "Erstellt Angebote und Preisvorschläge für Kundenprojekte.",
+   "keywords": [
+    "angebot",
+    "offerte",
+    "proposal",
+    "sales",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "discovery-call-vorbereiter",
+   "department": "Vertrieb & Sales",
+   "description": "Bereitet Erstgespräche vor: Firmenprofil, Fragen, Gesprächsleitfaden.",
+   "keywords": [
+    "discovery",
+    "erstgespräch",
+    "sales",
+    "vertrieb",
+    "vorbereitung"
+   ]
+  },
+  {
+   "name": "einwand-behandler",
+   "department": "Vertrieb & Sales",
+   "description": "Formuliert Antworten auf typische Einwände in Verkaufsgesprächen.",
+   "keywords": [
+    "einwand",
+    "objection",
+    "sales",
+    "verhandlung",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "follow-up-texter",
+   "department": "Vertrieb & Sales",
+   "description": "Schreibt Nachfass-E-Mails nach Calls und Angeboten.",
+   "keywords": [
+    "email",
+    "follow-up",
+    "nachfassen",
+    "sales",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "pipeline-analyst",
+   "department": "Vertrieb & Sales",
+   "description": "Analysiert die Sales-Pipeline und priorisiert Deals.",
+   "keywords": [
+    "crm",
+    "deals",
+    "forecast",
+    "pipeline",
+    "sales",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "kaltakquise-texter",
+   "department": "Vertrieb & Sales",
+   "description": "Schreibt personalisierte Cold-Outreach-Nachrichten.",
+   "keywords": [
+    "kaltakquise",
+    "linkedin",
+    "outreach",
+    "sales",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "referenz-sammler",
+   "department": "Vertrieb & Sales",
+   "description": "Erstellt Case Studies und Referenztexte aus Kundenprojekten.",
+   "keywords": [
+    "case-study",
+    "referenz",
+    "sales",
+    "testimonial",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "preisstratege",
+   "department": "Vertrieb & Sales",
+   "description": "Entwickelt Preismodelle und Paketstrukturen.",
+   "keywords": [
+    "marge",
+    "pakete",
+    "preis",
+    "pricing",
+    "sales",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "vertragsverhandler",
+   "department": "Vertrieb & Sales",
+   "description": "Bereitet Verhandlungspositionen und Zugeständnislinien vor.",
+   "keywords": [
+    "konditionen",
+    "sales",
+    "verhandlung",
+    "vertrag",
+    "vertrieb"
+   ]
+  },
+  {
+   "name": "kampagnen-planer",
+   "department": "Marketing & Ads",
+   "description": "Plant Marketingkampagnen mit Zielen, Kanälen und Budget.",
+   "keywords": [
+    "budget",
+    "kampagne",
+    "kanal",
+    "marketing",
+    "plan"
+   ]
+  },
+  {
+   "name": "meta-ads-spezialist",
+   "department": "Marketing & Ads",
+   "description": "Erstellt und optimiert Facebook- und Instagram-Anzeigen.",
+   "keywords": [
+    "ads",
+    "facebook",
+    "instagram",
+    "kampagne",
+    "marketing",
+    "meta"
+   ]
+  },
+  {
+   "name": "google-ads-spezialist",
+   "department": "Marketing & Ads",
+   "description": "Erstellt und optimiert Google-Suchanzeigen und Keywords.",
+   "keywords": [
+    "anzeigen",
+    "google-ads",
+    "kampagne",
+    "marketing",
+    "sea"
+   ]
+  },
+  {
+   "name": "seo-stratege",
+   "department": "Marketing & Ads",
+   "description": "Entwickelt SEO-Strategien und Keyword-Pläne.",
+   "keywords": [
+    "kampagne",
+    "keywords",
+    "marketing",
+    "ranking",
+    "seo"
+   ]
+  },
+  {
+   "name": "landingpage-optimierer",
+   "department": "Marketing & Ads",
+   "description": "Verbessert Landingpages für mehr Conversions.",
+   "keywords": [
+    "conversion",
+    "cro",
+    "kampagne",
+    "landingpage",
+    "marketing"
+   ]
+  },
+  {
+   "name": "email-marketer",
+   "department": "Marketing & Ads",
+   "description": "Konzipiert E-Mail-Sequenzen und Marketing-Automationen.",
+   "keywords": [
+    "email",
+    "kampagne",
+    "marketing",
+    "newsletter",
+    "sequenz"
+   ]
+  },
+  {
+   "name": "funnel-architekt",
+   "department": "Marketing & Ads",
+   "description": "Entwirft Marketing-Funnels vom Lead bis zum Abschluss.",
+   "keywords": [
+    "funnel",
+    "kampagne",
+    "leadmagnet",
+    "marketing",
+    "trichter"
+   ]
+  },
+  {
+   "name": "zielgruppen-analyst",
+   "department": "Marketing & Ads",
+   "description": "Erstellt Personas und Zielgruppenanalysen.",
+   "keywords": [
+    "icp",
+    "kampagne",
+    "marketing",
+    "persona",
+    "zielgruppe"
+   ]
+  },
+  {
+   "name": "wettbewerbs-beobachter",
+   "department": "Marketing & Ads",
+   "description": "Analysiert Wettbewerber-Marketing und Positionierung.",
+   "keywords": [
+    "analyse",
+    "kampagne",
+    "konkurrenz",
+    "marketing",
+    "wettbewerb"
+   ]
+  },
+  {
+   "name": "messaging-stratege",
+   "department": "Marketing & Ads",
+   "description": "Schärft Positionierung, USPs und Kernbotschaften.",
+   "keywords": [
+    "botschaft",
+    "kampagne",
+    "marketing",
+    "positionierung",
+    "usp"
+   ]
+  },
+  {
+   "name": "blog-autor",
+   "department": "Content & Copy",
+   "description": "Schreibt SEO-optimierte Blogartikel.",
+   "keywords": [
+    "artikel",
+    "blog",
+    "content",
+    "seo",
+    "text"
+   ]
+  },
+  {
+   "name": "newsletter-autor",
+   "department": "Content & Copy",
+   "description": "Schreibt Newsletter-Ausgaben im FVM-Tonfall.",
+   "keywords": [
+    "ausgabe",
+    "content",
+    "newsletter",
+    "text"
+   ]
+  },
+  {
+   "name": "conversion-copywriter",
+   "department": "Content & Copy",
+   "description": "Schreibt verkaufsstarke Texte für Ads und Salespages.",
+   "keywords": [
+    "content",
+    "copywriting",
+    "salespage",
+    "text",
+    "werbetext"
+   ]
+  },
+  {
+   "name": "whitepaper-autor",
+   "department": "Content & Copy",
+   "description": "Erstellt Whitepaper und Leitfäden für die Lead-Generierung.",
+   "keywords": [
+    "content",
+    "ebook",
+    "leitfaden",
+    "text",
+    "whitepaper"
+   ]
+  },
+  {
+   "name": "skript-autor",
+   "department": "Content & Copy",
+   "description": "Schreibt Skripte für Videos und Webinare.",
+   "keywords": [
+    "content",
+    "drehbuch",
+    "skript",
+    "text",
+    "webinar"
+   ]
+  },
+  {
+   "name": "storytelling-experte",
+   "department": "Content & Copy",
+   "description": "Verwandelt Fakten in Geschichten und Narrative.",
+   "keywords": [
+    "content",
+    "narrativ",
+    "story",
+    "storytelling",
+    "text"
+   ]
+  },
+  {
+   "name": "redaktionsplaner",
+   "department": "Content & Copy",
+   "description": "Erstellt und pflegt Redaktions- und Themenpläne.",
+   "keywords": [
+    "content",
+    "kalender",
+    "redaktionsplan",
+    "text",
+    "themenplan"
+   ]
+  },
+  {
+   "name": "lektor",
+   "department": "Content & Copy",
+   "description": "Korrigiert Rechtschreibung, Grammatik und Stil.",
+   "keywords": [
+    "content",
+    "korrektur",
+    "lektorat",
+    "rechtschreibung",
+    "text"
+   ]
+  },
+  {
+   "name": "uebersetzer-de-en",
+   "department": "Content & Copy",
+   "description": "Übersetzt Inhalte zwischen Deutsch und Englisch.",
+   "keywords": [
+    "content",
+    "englisch",
+    "text",
+    "translation",
+    "übersetzung"
+   ]
+  },
+  {
+   "name": "headline-spezialist",
+   "department": "Content & Copy",
+   "description": "Entwickelt Überschriften, Hooks und Betreffzeilen.",
+   "keywords": [
+    "betreff",
+    "content",
+    "headline",
+    "hook",
+    "text"
+   ]
+  },
+  {
+   "name": "linkedin-stratege",
+   "department": "Social Media",
+   "description": "Plant und schreibt LinkedIn-Posts für Personal Branding.",
+   "keywords": [
+    "linkedin",
+    "personal-brand",
+    "post",
+    "social-media"
+   ]
+  },
+  {
+   "name": "instagram-planer",
+   "department": "Social Media",
+   "description": "Plant Instagram-Content: Posts, Reels, Stories.",
+   "keywords": [
+    "instagram",
+    "reels",
+    "social-media",
+    "stories"
+   ]
+  },
+  {
+   "name": "youtube-stratege",
+   "department": "Social Media",
+   "description": "Entwickelt YouTube-Konzepte, Titel und Beschreibungen.",
+   "keywords": [
+    "social-media",
+    "titel",
+    "video",
+    "youtube"
+   ]
+  },
+  {
+   "name": "tiktok-trendscout",
+   "department": "Social Media",
+   "description": "Identifiziert TikTok-Trends und Formatideen.",
+   "keywords": [
+    "social-media",
+    "tiktok",
+    "trends",
+    "viral"
+   ]
+  },
+  {
+   "name": "community-manager",
+   "department": "Social Media",
+   "description": "Formuliert Antworten auf Kommentare und Nachrichten.",
+   "keywords": [
+    "antworten",
+    "community",
+    "kommentare",
+    "social-media"
+   ]
+  },
+  {
+   "name": "carousel-texter",
+   "department": "Social Media",
+   "description": "Textet Carousel-Slides für LinkedIn und Instagram.",
+   "keywords": [
+    "carousel",
+    "slides",
+    "social-media"
+   ]
+  },
+  {
+   "name": "hashtag-rechercheur",
+   "department": "Social Media",
+   "description": "Recherchiert Hashtags und optimale Posting-Zeiten.",
+   "keywords": [
+    "hashtag",
+    "reichweite",
+    "social-media",
+    "timing"
+   ]
+  },
+  {
+   "name": "repurposing-spezialist",
+   "department": "Social Media",
+   "description": "Verwandelt lange Inhalte in Social-Media-Schnipsel.",
+   "keywords": [
+    "repurposing",
+    "schnipsel",
+    "social-media",
+    "zweitverwertung"
+   ]
+  },
+  {
+   "name": "engagement-analyst",
+   "department": "Social Media",
+   "description": "Analysiert Social-Media-Kennzahlen und leitet Maßnahmen ab.",
+   "keywords": [
+    "engagement",
+    "insights",
+    "kpi",
+    "social-media"
+   ]
+  },
+  {
+   "name": "social-ads-texter",
+   "department": "Social Media",
+   "description": "Textet Anzeigenvarianten für Social-Kampagnen.",
+   "keywords": [
+    "anzeige",
+    "social-ads",
+    "social-media",
+    "varianten"
+   ]
+  },
+  {
+   "name": "markt-rechercheur",
+   "department": "Research & Analyse",
+   "description": "Recherchiert Märkte, Branchen und Trends.",
+   "keywords": [
+    "analyse",
+    "branche",
+    "markt",
+    "recherche",
+    "research",
+    "trend"
+   ]
+  },
+  {
+   "name": "tool-scout",
+   "department": "Research & Analyse",
+   "description": "Bewertet neue KI-Tools und Software im Vergleich.",
+   "keywords": [
+    "analyse",
+    "bewertung",
+    "recherche",
+    "research",
+    "software",
+    "tool"
+   ]
+  },
+  {
+   "name": "ki-news-kurator",
+   "department": "Research & Analyse",
+   "description": "Kuratiert relevante KI-News für FVM-Studio.",
+   "keywords": [
+    "ai",
+    "analyse",
+    "ki-news",
+    "kuratierung",
+    "recherche",
+    "research"
+   ]
+  },
+  {
+   "name": "studien-zusammenfasser",
+   "department": "Research & Analyse",
+   "description": "Fasst Studien und Reports kompakt zusammen.",
+   "keywords": [
+    "analyse",
+    "recherche",
+    "report",
+    "research",
+    "studie",
+    "zusammenfassung"
+   ]
+  },
+  {
+   "name": "daten-analyst",
+   "department": "Research & Analyse",
+   "description": "Analysiert Datensätze und erstellt Auswertungen.",
+   "keywords": [
+    "analyse",
+    "auswertung",
+    "csv",
+    "daten",
+    "recherche",
+    "research",
+    "statistik"
+   ]
+  },
+  {
+   "name": "umfrage-designer",
+   "department": "Research & Analyse",
+   "description": "Entwirft Umfragen und Fragebögen.",
+   "keywords": [
+    "analyse",
+    "feedback",
+    "fragebogen",
+    "recherche",
+    "research",
+    "umfrage"
+   ]
+  },
+  {
+   "name": "quellen-finder",
+   "department": "Research & Analyse",
+   "description": "Identifiziert Experten, Podcasts und Quellen zu Themen.",
+   "keywords": [
+    "analyse",
+    "experten",
+    "podcast",
+    "quellen",
+    "recherche",
+    "research"
+   ]
+  },
+  {
+   "name": "faktenchecker",
+   "department": "Research & Analyse",
+   "description": "Prüft Behauptungen und Quellenlagen.",
+   "keywords": [
+    "analyse",
+    "fakten",
+    "prüfung",
+    "recherche",
+    "research",
+    "verifikation"
+   ]
+  },
+  {
+   "name": "benchmark-analyst",
+   "department": "Research & Analyse",
+   "description": "Vergleicht Anbieter, Preise und Leistungen.",
+   "keywords": [
+    "analyse",
+    "anbieter",
+    "benchmark",
+    "recherche",
+    "research",
+    "vergleich"
+   ]
+  },
+  {
+   "name": "trend-radar",
+   "department": "Research & Analyse",
+   "description": "Beobachtet Zukunftstrends mit Relevanz für KMU.",
+   "keywords": [
+    "analyse",
+    "früherkennung",
+    "radar",
+    "recherche",
+    "research",
+    "zukunft"
+   ]
+  },
+  {
+   "name": "beleg-erfasser",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Strukturiert Belege und Ausgaben für die Buchhaltung.",
+   "keywords": [
+    "ausgabe",
+    "beleg",
+    "buchhaltung",
+    "finanzen",
+    "geld"
+   ]
+  },
+  {
+   "name": "rechnungs-schreiber",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Erstellt Rechnungsentwürfe und Zahlungserinnerungen.",
+   "keywords": [
+    "finanzen",
+    "geld",
+    "mahnung",
+    "rechnung",
+    "zahlung"
+   ]
+  },
+  {
+   "name": "liquiditaets-planer",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Plant Cashflow und Liquidität.",
+   "keywords": [
+    "cashflow",
+    "finanzen",
+    "geld",
+    "liquidität",
+    "planung"
+   ]
+  },
+  {
+   "name": "steuer-vorbereiter",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Bereitet Unterlagen für den Steuerberater vor.",
+   "keywords": [
+    "finanzen",
+    "geld",
+    "steuer",
+    "steuerberater",
+    "umsatzsteuer"
+   ]
+  },
+  {
+   "name": "abo-controller",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Überwacht Tool-Abos und Fixkosten.",
+   "keywords": [
+    "abo",
+    "finanzen",
+    "fixkosten",
+    "geld",
+    "toolkosten"
+   ]
+  },
+  {
+   "name": "projekt-kalkulator",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Kalkuliert Projektkosten, Stundensätze und Margen.",
+   "keywords": [
+    "finanzen",
+    "geld",
+    "kalkulation",
+    "marge",
+    "stundensatz"
+   ]
+  },
+  {
+   "name": "umsatz-reporter",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Erstellt Umsatz- und Erfolgsübersichten.",
+   "keywords": [
+    "finanzen",
+    "geld",
+    "monatsabschluss",
+    "report",
+    "umsatz"
+   ]
+  },
+  {
+   "name": "foerder-scout",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Recherchiert Fördermittel und Zuschüsse für KMU-Projekte.",
+   "keywords": [
+    "digitalisierung",
+    "finanzen",
+    "förderung",
+    "geld",
+    "zuschuss"
+   ]
+  },
+  {
+   "name": "investitions-bewerter",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Bewertet Anschaffungen nach Kosten-Nutzen.",
+   "keywords": [
+    "bewertung",
+    "finanzen",
+    "geld",
+    "investition",
+    "roi"
+   ]
+  },
+  {
+   "name": "zahlungs-tracker",
+   "department": "Finanzen & Buchhaltung",
+   "description": "Verfolgt offene Posten und Zahlungseingänge.",
+   "keywords": [
+    "finanzen",
+    "geld",
+    "mahnwesen",
+    "offene-posten",
+    "zahlungseingang"
+   ]
+  },
+  {
+   "name": "dsgvo-berater",
+   "department": "Recht & Compliance",
+   "description": "Beantwortet Datenschutzfragen nach DSGVO.",
+   "keywords": [
+    "datenschutz",
+    "dsgvo",
+    "legal",
+    "privacy",
+    "recht"
+   ]
+  },
+  {
+   "name": "av-vertrags-pruefer",
+   "department": "Recht & Compliance",
+   "description": "Prüft Auftragsverarbeitungsverträge.",
+   "keywords": [
+    "auftragsverarbeitung",
+    "av-vertrag",
+    "legal",
+    "recht"
+   ]
+  },
+  {
+   "name": "ai-act-berater",
+   "department": "Recht & Compliance",
+   "description": "Bewertet KI-Einsatz nach EU AI Act und Risikoklassen.",
+   "keywords": [
+    "ai-act",
+    "eu",
+    "legal",
+    "recht",
+    "risikoklasse"
+   ]
+  },
+  {
+   "name": "impressum-pruefer",
+   "department": "Recht & Compliance",
+   "description": "Prüft Impressum und Pflichtangaben von Websites.",
+   "keywords": [
+    "impressum",
+    "legal",
+    "pflichtangaben",
+    "recht"
+   ]
+  },
+  {
+   "name": "vertrags-entwerfer",
+   "department": "Recht & Compliance",
+   "description": "Entwirft Dienstleistungsverträge und AGB-Bausteine.",
+   "keywords": [
+    "agb",
+    "entwurf",
+    "legal",
+    "recht",
+    "vertrag"
+   ]
+  },
+  {
+   "name": "urheberrechts-berater",
+   "department": "Recht & Compliance",
+   "description": "Beantwortet Fragen zu Urheberrecht und Lizenzen.",
+   "keywords": [
+    "bildrechte",
+    "legal",
+    "lizenz",
+    "recht",
+    "urheberrecht"
+   ]
+  },
+  {
+   "name": "datenschutzerklaerung-autor",
+   "department": "Recht & Compliance",
+   "description": "Erstellt und aktualisiert Datenschutzerklärungen.",
+   "keywords": [
+    "cookies",
+    "datenschutzerklärung",
+    "legal",
+    "recht"
+   ]
+  },
+  {
+   "name": "compliance-checker",
+   "department": "Recht & Compliance",
+   "description": "Prüft Prozesse auf Compliance-Risiken.",
+   "keywords": [
+    "audit",
+    "compliance",
+    "legal",
+    "recht",
+    "risiko"
+   ]
+  },
+  {
+   "name": "markenrecht-scout",
+   "department": "Recht & Compliance",
+   "description": "Recherchiert Markenkonflikte vor Namensgebungen.",
+   "keywords": [
+    "legal",
+    "marke",
+    "markenrecht",
+    "namensprüfung",
+    "recht"
+   ]
+  },
+  {
+   "name": "betroffenenrechte-bearbeiter",
+   "department": "Recht & Compliance",
+   "description": "Bearbeitet Auskunfts- und Löschanfragen nach DSGVO.",
+   "keywords": [
+    "auskunft",
+    "betroffenenrechte",
+    "legal",
+    "löschung",
+    "recht"
+   ]
+  },
+  {
+   "name": "projekt-planer",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Erstellt Projektpläne mit Meilensteinen und Timeline.",
+   "keywords": [
+    "delivery",
+    "meilenstein",
+    "projekt",
+    "projektplan",
+    "timeline"
+   ]
+  },
+  {
+   "name": "onboarding-manager",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Strukturiert Kunden-Onboardings und Kickoffs.",
+   "keywords": [
+    "delivery",
+    "kickoff",
+    "onboarding",
+    "projekt",
+    "projektstart"
+   ]
+  },
+  {
+   "name": "anforderungs-analyst",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Übersetzt Kundenwünsche in klare Anforderungen.",
+   "keywords": [
+    "anforderung",
+    "briefing",
+    "delivery",
+    "projekt",
+    "scope"
+   ]
+  },
+  {
+   "name": "statusbericht-autor",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Schreibt Statusberichte und Updates für Kunden.",
+   "keywords": [
+    "bericht",
+    "delivery",
+    "projekt",
+    "status",
+    "update"
+   ]
+  },
+  {
+   "name": "meeting-protokollant",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Fasst Meetings in Protokolle und To-dos zusammen.",
+   "keywords": [
+    "delivery",
+    "meeting",
+    "projekt",
+    "protokoll",
+    "todos"
+   ]
+  },
+  {
+   "name": "risiko-manager",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Identifiziert Projektrisiken und Gegenmaßnahmen.",
+   "keywords": [
+    "blocker",
+    "delivery",
+    "eskalation",
+    "projekt",
+    "risiko"
+   ]
+  },
+  {
+   "name": "uebergabe-dokumentierer",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Erstellt Übergabe- und Abschlussdokumentationen.",
+   "keywords": [
+    "abschluss",
+    "delivery",
+    "dokumentation",
+    "projekt",
+    "übergabe"
+   ]
+  },
+  {
+   "name": "feedback-einholer",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Formuliert Feedback-Anfragen und wertet sie aus.",
+   "keywords": [
+    "delivery",
+    "feedback",
+    "nps",
+    "projekt",
+    "zufriedenheit"
+   ]
+  },
+  {
+   "name": "scope-waechter",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Erkennt Scope Creep und formuliert Change Requests.",
+   "keywords": [
+    "change-request",
+    "delivery",
+    "mehraufwand",
+    "projekt",
+    "scope-creep"
+   ]
+  },
+  {
+   "name": "retro-moderator",
+   "department": "Kundenprojekte & Delivery",
+   "description": "Bereitet Retrospektiven vor und fasst Learnings zusammen.",
+   "keywords": [
+    "delivery",
+    "learnings",
+    "projekt",
+    "retrospektive",
+    "verbesserung"
+   ]
+  },
+  {
+   "name": "n8n-architekt",
+   "department": "Automatisierung & n8n",
+   "description": "Entwirft n8n-Workflows für Kundenprozesse.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "design",
+    "n8n",
+    "nodes",
+    "workflow"
+   ]
+  },
+  {
+   "name": "workflow-debugger",
+   "department": "Automatisierung & n8n",
+   "description": "Analysiert fehlgeschlagene Workflow-Läufe.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "debug",
+    "fehler",
+    "log",
+    "n8n"
+   ]
+  },
+  {
+   "name": "api-integrator",
+   "department": "Automatisierung & n8n",
+   "description": "Plant API-Anbindungen zwischen Tools.",
+   "keywords": [
+    "api",
+    "automation",
+    "automatisierung",
+    "integration",
+    "n8n",
+    "schnittstelle"
+   ]
+  },
+  {
+   "name": "automatisierungs-scout",
+   "department": "Automatisierung & n8n",
+   "description": "Findet Automatisierungspotenziale in Prozessen.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "einsparung",
+    "n8n",
+    "potenzial",
+    "prozess"
+   ]
+  },
+  {
+   "name": "webhook-spezialist",
+   "department": "Automatisierung & n8n",
+   "description": "Konzipiert Webhook-Logik und Trigger.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "event",
+    "n8n",
+    "trigger",
+    "webhook"
+   ]
+  },
+  {
+   "name": "daten-mapper",
+   "department": "Automatisierung & n8n",
+   "description": "Definiert Feld-Mappings zwischen Systemen.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "felder",
+    "mapping",
+    "n8n",
+    "transformation"
+   ]
+  },
+  {
+   "name": "prozess-dokumentierer",
+   "department": "Automatisierung & n8n",
+   "description": "Dokumentiert Workflows nachvollziehbar als SOP.",
+   "keywords": [
+    "anleitung",
+    "automation",
+    "automatisierung",
+    "doku",
+    "n8n",
+    "sop"
+   ]
+  },
+  {
+   "name": "plattform-berater",
+   "department": "Automatisierung & n8n",
+   "description": "Vergleicht Automatisierungsplattformen je Use Case.",
+   "keywords": [
+    "automation",
+    "automatisierung",
+    "make",
+    "n8n",
+    "vergleich",
+    "zapier"
+   ]
+  },
+  {
+   "name": "monitoring-planer",
+   "department": "Automatisierung & n8n",
+   "description": "Definiert Alerts und Überwachung für Automationen.",
+   "keywords": [
+    "alert",
+    "ausfall",
+    "automation",
+    "automatisierung",
+    "monitoring",
+    "n8n"
+   ]
+  },
+  {
+   "name": "automatisierbarkeits-bewerter",
+   "department": "Automatisierung & n8n",
+   "description": "Bewertet, ob Aufgaben für Automatisierung taugen.",
+   "keywords": [
+    "aufwand",
+    "automation",
+    "automatisierung",
+    "machbarkeit",
+    "n8n",
+    "nutzen"
+   ]
+  },
+  {
+   "name": "code-reviewer",
+   "department": "Entwicklung & Tech",
+   "description": "Reviewt Code auf Fehler und Verbesserungen.",
+   "keywords": [
+    "bug",
+    "code",
+    "entwicklung",
+    "qualität",
+    "review",
+    "tech"
+   ]
+  },
+  {
+   "name": "python-entwickler",
+   "department": "Entwicklung & Tech",
+   "description": "Schreibt und erklärt Python-Skripte.",
+   "keywords": [
+    "code",
+    "entwicklung",
+    "python",
+    "skript",
+    "tech"
+   ]
+  },
+  {
+   "name": "web-entwickler",
+   "department": "Entwicklung & Tech",
+   "description": "Baut und verbessert Websites mit Next.js und React.",
+   "keywords": [
+    "code",
+    "entwicklung",
+    "frontend",
+    "nextjs",
+    "react",
+    "tech",
+    "website"
+   ]
+  },
+  {
+   "name": "datenbank-designer",
+   "department": "Entwicklung & Tech",
+   "description": "Entwirft Datenmodelle und SQL-Abfragen.",
+   "keywords": [
+    "code",
+    "datenbank",
+    "entwicklung",
+    "schema",
+    "sql",
+    "tech"
+   ]
+  },
+  {
+   "name": "devops-berater",
+   "department": "Entwicklung & Tech",
+   "description": "Berät zu Server, Docker und Deployment.",
+   "keywords": [
+    "code",
+    "deployment",
+    "docker",
+    "entwicklung",
+    "server",
+    "tech",
+    "vps"
+   ]
+  },
+  {
+   "name": "prompt-engineer",
+   "department": "Entwicklung & Tech",
+   "description": "Optimiert Prompts für KI-Anwendungen.",
+   "keywords": [
+    "code",
+    "entwicklung",
+    "llm",
+    "optimierung",
+    "prompt",
+    "tech"
+   ]
+  },
+  {
+   "name": "mcp-spezialist",
+   "department": "Entwicklung & Tech",
+   "description": "Entwirft MCP-Server und Tool-Anbindungen für Claude.",
+   "keywords": [
+    "claude",
+    "code",
+    "entwicklung",
+    "mcp",
+    "tech",
+    "tools"
+   ]
+  },
+  {
+   "name": "security-auditor",
+   "department": "Entwicklung & Tech",
+   "description": "Prüft Anwendungen auf Sicherheitslücken.",
+   "keywords": [
+    "audit",
+    "code",
+    "entwicklung",
+    "security",
+    "sicherheit",
+    "tech"
+   ]
+  },
+  {
+   "name": "performance-optimierer",
+   "department": "Entwicklung & Tech",
+   "description": "Findet und behebt Performance-Probleme.",
+   "keywords": [
+    "code",
+    "entwicklung",
+    "ladezeit",
+    "optimierung",
+    "performance",
+    "tech"
+   ]
+  },
+  {
+   "name": "tech-erklaerer",
+   "department": "Entwicklung & Tech",
+   "description": "Übersetzt Technik in verständliche Kundensprache.",
+   "keywords": [
+    "code",
+    "entwicklung",
+    "erklärung",
+    "tech",
+    "verständlich",
+    "übersetzen"
+   ]
+  },
+  {
+   "name": "brand-waechter",
+   "department": "Design & Brand",
+   "description": "Wacht über Markenauftritt und CI-Konsistenz.",
+   "keywords": [
+    "brand",
+    "ci",
+    "design",
+    "gestaltung",
+    "konsistenz"
+   ]
+  },
+  {
+   "name": "praesentations-designer",
+   "department": "Design & Brand",
+   "description": "Strukturiert und gestaltet Pitch-Decks.",
+   "keywords": [
+    "design",
+    "gestaltung",
+    "pitch",
+    "präsentation",
+    "slides"
+   ]
+  },
+  {
+   "name": "canva-konzepter",
+   "department": "Design & Brand",
+   "description": "Erstellt Konzepte und Texte für Canva-Designs.",
+   "keywords": [
+    "canva",
+    "design",
+    "gestaltung",
+    "grafik",
+    "vorlage"
+   ]
+  },
+  {
+   "name": "ui-berater",
+   "department": "Design & Brand",
+   "description": "Gibt Feedback zu Interfaces und Usability.",
+   "keywords": [
+    "design",
+    "gestaltung",
+    "ui",
+    "usability",
+    "ux"
+   ]
+  },
+  {
+   "name": "bildprompt-designer",
+   "department": "Design & Brand",
+   "description": "Schreibt Prompts für KI-Bildgenerierung.",
+   "keywords": [
+    "bildprompt",
+    "design",
+    "generierung",
+    "gestaltung",
+    "midjourney"
+   ]
+  },
+  {
+   "name": "infografik-konzepter",
+   "department": "Design & Brand",
+   "description": "Verwandelt Daten in Infografik-Konzepte.",
+   "keywords": [
+    "design",
+    "gestaltung",
+    "infografik",
+    "visualisierung"
+   ]
+  },
+  {
+   "name": "design-briefing-autor",
+   "department": "Design & Brand",
+   "description": "Erstellt Design-Briefings für Logos und CI.",
+   "keywords": [
+    "briefing",
+    "design",
+    "gestaltung",
+    "logo"
+   ]
+  },
+  {
+   "name": "farb-typo-berater",
+   "department": "Design & Brand",
+   "description": "Berät zu Farbpaletten und Typografie.",
+   "keywords": [
+    "design",
+    "farbe",
+    "gestaltung",
+    "palette",
+    "schrift"
+   ]
+  },
+  {
+   "name": "website-strukturierer",
+   "department": "Design & Brand",
+   "description": "Entwirft Seitenstrukturen und Wireframe-Texte.",
+   "keywords": [
+    "design",
+    "gestaltung",
+    "sitemap",
+    "struktur",
+    "wireframe"
+   ]
+  },
+  {
+   "name": "asset-organisator",
+   "department": "Design & Brand",
+   "description": "Strukturiert Design-Assets und Bibliotheken.",
+   "keywords": [
+    "assets",
+    "bibliothek",
+    "design",
+    "gestaltung",
+    "ordnung"
+   ]
+  },
+  {
+   "name": "video-konzepter",
+   "department": "Video & Audio",
+   "description": "Entwickelt Videokonzepte und Storyboards.",
+   "keywords": [
+    "audio",
+    "konzept",
+    "storyboard",
+    "video"
+   ]
+  },
+  {
+   "name": "schnitt-planer",
+   "department": "Video & Audio",
+   "description": "Erstellt Schnittpläne und Timecodes.",
+   "keywords": [
+    "audio",
+    "edit",
+    "schnitt",
+    "timecode",
+    "video"
+   ]
+  },
+  {
+   "name": "untertitel-ersteller",
+   "department": "Video & Audio",
+   "description": "Erstellt und korrigiert Untertitel.",
+   "keywords": [
+    "audio",
+    "captions",
+    "srt",
+    "untertitel",
+    "video"
+   ]
+  },
+  {
+   "name": "podcast-produzent",
+   "department": "Video & Audio",
+   "description": "Plant Podcast-Folgen und schreibt Shownotes.",
+   "keywords": [
+    "audio",
+    "folge",
+    "podcast",
+    "shownotes",
+    "video"
+   ]
+  },
+  {
+   "name": "voiceover-texter",
+   "department": "Video & Audio",
+   "description": "Schreibt Sprechertexte für Videos.",
+   "keywords": [
+    "audio",
+    "sprechertext",
+    "video",
+    "voiceover"
+   ]
+  },
+  {
+   "name": "thumbnail-konzepter",
+   "department": "Video & Audio",
+   "description": "Konzipiert Thumbnails mit Text- und Bildidee.",
+   "keywords": [
+    "audio",
+    "klickrate",
+    "thumbnail",
+    "video"
+   ]
+  },
+  {
+   "name": "kurzform-formatierer",
+   "department": "Video & Audio",
+   "description": "Schneidet lange Videos konzeptionell auf Reels und Shorts zu.",
+   "keywords": [
+    "audio",
+    "kurzform",
+    "reels",
+    "shorts",
+    "video"
+   ]
+  },
+  {
+   "name": "transkript-aufbereiter",
+   "department": "Video & Audio",
+   "description": "Bereinigt und strukturiert Transkripte.",
+   "keywords": [
+    "audio",
+    "aufbereitung",
+    "transkript",
+    "video",
+    "whisper"
+   ]
+  },
+  {
+   "name": "musik-sound-berater",
+   "department": "Video & Audio",
+   "description": "Empfiehlt Musik und Sounddesign.",
+   "keywords": [
+    "audio",
+    "lizenzfrei",
+    "musik",
+    "sound",
+    "video"
+   ]
+  },
+  {
+   "name": "webinar-regisseur",
+   "department": "Video & Audio",
+   "description": "Plant Ablauf und Dramaturgie von Webinaren.",
+   "keywords": [
+    "ablauf",
+    "audio",
+    "dramaturgie",
+    "video",
+    "webinar"
+   ]
+  },
+  {
+   "name": "support-antworter",
+   "department": "Kundensupport & CRM",
+   "description": "Beantwortet Kundenanfragen empathisch und lösungsorientiert.",
+   "keywords": [
+    "anfrage",
+    "antwort",
+    "kundenservice",
+    "support",
+    "ticket"
+   ]
+  },
+  {
+   "name": "faq-autor",
+   "department": "Kundensupport & CRM",
+   "description": "Erstellt FAQ-Artikel aus wiederkehrenden Fragen.",
+   "keywords": [
+    "faq",
+    "kundenservice",
+    "support",
+    "wissensdatenbank"
+   ]
+  },
+  {
+   "name": "beschwerde-manager",
+   "department": "Kundensupport & CRM",
+   "description": "Deeskaliert Beschwerden und formuliert Lösungen.",
+   "keywords": [
+    "beschwerde",
+    "deeskalation",
+    "kulanz",
+    "kundenservice",
+    "support"
+   ]
+  },
+  {
+   "name": "crm-pfleger",
+   "department": "Kundensupport & CRM",
+   "description": "Hält Kundendaten strukturiert und aktuell.",
+   "keywords": [
+    "crm",
+    "datenpflege",
+    "kontakte",
+    "kundenservice",
+    "support"
+   ]
+  },
+  {
+   "name": "kuendigungs-retter",
+   "department": "Kundensupport & CRM",
+   "description": "Formuliert Rückgewinnungsangebote bei Kündigungen.",
+   "keywords": [
+    "churn",
+    "kundenservice",
+    "kündigung",
+    "rückgewinnung",
+    "support"
+   ]
+  },
+  {
+   "name": "upsell-erkenner",
+   "department": "Kundensupport & CRM",
+   "description": "Erkennt Upsell-Chancen bei Bestandskunden.",
+   "keywords": [
+    "bestandskunde",
+    "cross-sell",
+    "kundenservice",
+    "support",
+    "upsell"
+   ]
+  },
+  {
+   "name": "willkommens-mailer",
+   "department": "Kundensupport & CRM",
+   "description": "Schreibt Willkommens- und Einführungsmails.",
+   "keywords": [
+    "einführung",
+    "kundenservice",
+    "mail",
+    "support",
+    "willkommen"
+   ]
+  },
+  {
+   "name": "zufriedenheits-tracker",
+   "department": "Kundensupport & CRM",
+   "description": "Wertet Kundenfeedback systematisch aus.",
+   "keywords": [
+    "auswertung",
+    "bewertungen",
+    "kundenservice",
+    "support",
+    "zufriedenheit"
+   ]
+  },
+  {
+   "name": "eskalations-koordinator",
+   "department": "Kundensupport & CRM",
+   "description": "Strukturiert Eskalationsfälle für Lars.",
+   "keywords": [
+    "dringend",
+    "eskalation",
+    "koordination",
+    "kundenservice",
+    "support"
+   ]
+  },
+  {
+   "name": "bewertungs-manager",
+   "department": "Kundensupport & CRM",
+   "description": "Holt Google- und Trustpilot-Bewertungen ein und beantwortet sie.",
+   "keywords": [
+    "google",
+    "kundenservice",
+    "rezension",
+    "support",
+    "trustpilot"
+   ]
+  },
+  {
+   "name": "geschaeftsmodell-analyst",
+   "department": "Strategie & Produkt",
+   "description": "Analysiert und entwickelt Geschäftsmodelle.",
+   "keywords": [
+    "canvas",
+    "geschäftsmodell",
+    "strategie"
+   ]
+  },
+  {
+   "name": "produkt-entwickler",
+   "department": "Strategie & Produkt",
+   "description": "Entwickelt Angebots- und Produktideen.",
+   "keywords": [
+    "angebot",
+    "paketierung",
+    "produkt",
+    "strategie"
+   ]
+  },
+  {
+   "name": "okr-coach",
+   "department": "Strategie & Produkt",
+   "description": "Formuliert Ziele und Key Results.",
+   "keywords": [
+    "okr",
+    "quartal",
+    "strategie",
+    "ziele"
+   ]
+  },
+  {
+   "name": "swot-analyst",
+   "department": "Strategie & Produkt",
+   "description": "Erstellt SWOT- und Risikoanalysen.",
+   "keywords": [
+    "risiken",
+    "strategie",
+    "stärken",
+    "swot"
+   ]
+  },
+  {
+   "name": "pivot-berater",
+   "department": "Strategie & Produkt",
+   "description": "Bewertet strategische Richtungswechsel.",
+   "keywords": [
+    "entscheidung",
+    "pivot",
+    "richtungswechsel",
+    "strategie"
+   ]
+  },
+  {
+   "name": "partnerschafts-scout",
+   "department": "Strategie & Produkt",
+   "description": "Identifiziert Kooperations- und Partnerchancen.",
+   "keywords": [
+    "kooperation",
+    "partner",
+    "strategie"
+   ]
+  },
+  {
+   "name": "skalierungs-planer",
+   "department": "Strategie & Produkt",
+   "description": "Plant Wachstum und Kapazitäten.",
+   "keywords": [
+    "kapazität",
+    "skalierung",
+    "strategie",
+    "wachstum"
+   ]
+  },
+  {
+   "name": "entscheidungs-vorbereiter",
+   "department": "Strategie & Produkt",
+   "description": "Bereitet Entscheidungen mit Optionen und Trade-offs auf.",
+   "keywords": [
+    "abwägung",
+    "optionen",
+    "strategie",
+    "tradeoff"
+   ]
+  },
+  {
+   "name": "vision-schaerfer",
+   "department": "Strategie & Produkt",
+   "description": "Schärft Vision, Mission und Werte.",
+   "keywords": [
+    "mission",
+    "strategie",
+    "vision",
+    "werte"
+   ]
+  },
+  {
+   "name": "quartals-reviewer",
+   "department": "Strategie & Produkt",
+   "description": "Strukturiert Quartalsrückblicke und -planung.",
+   "keywords": [
+    "planung",
+    "quartalsreview",
+    "rückblick",
+    "strategie"
+   ]
+  },
+  {
+   "name": "stellenprofil-autor",
+   "department": "HR & Organisation",
+   "description": "Erstellt Stellen- und Rollenprofile.",
+   "keywords": [
+    "hr",
+    "organisation",
+    "profil",
+    "rolle",
+    "stelle",
+    "team"
+   ]
+  },
+  {
+   "name": "freelancer-scout",
+   "department": "HR & Organisation",
+   "description": "Definiert Anforderungen und Suchstrategien für Freelancer.",
+   "keywords": [
+    "brief",
+    "freelancer",
+    "hr",
+    "organisation",
+    "suche",
+    "team"
+   ]
+  },
+  {
+   "name": "einarbeitungs-strukturierer",
+   "department": "HR & Organisation",
+   "description": "Baut Einarbeitungspläne für neue Teammitglieder.",
+   "keywords": [
+    "einarbeitung",
+    "hr",
+    "organisation",
+    "plan",
+    "team"
+   ]
+  },
+  {
+   "name": "sop-autor",
+   "department": "HR & Organisation",
+   "description": "Schreibt Standard Operating Procedures.",
+   "keywords": [
+    "anleitung",
+    "hr",
+    "organisation",
+    "prozess",
+    "sop",
+    "team"
+   ]
+  },
+  {
+   "name": "meeting-strukturierer",
+   "department": "HR & Organisation",
+   "description": "Optimiert Meeting-Formate und Agenden.",
+   "keywords": [
+    "agenda",
+    "effizienz",
+    "hr",
+    "meeting",
+    "organisation",
+    "team"
+   ]
+  },
+  {
+   "name": "wissens-organisator",
+   "department": "HR & Organisation",
+   "description": "Strukturiert internes Wissen in Obsidian und Notion.",
+   "keywords": [
+    "hr",
+    "notion",
+    "obsidian",
+    "organisation",
+    "team",
+    "wissen"
+   ]
+  },
+  {
+   "name": "kultur-berater",
+   "department": "HR & Organisation",
+   "description": "Entwickelt Team-Rituale und Zusammenarbeitsregeln.",
+   "keywords": [
+    "hr",
+    "kultur",
+    "organisation",
+    "rituale",
+    "team",
+    "zusammenarbeit"
+   ]
+  },
+  {
+   "name": "delegations-coach",
+   "department": "HR & Organisation",
+   "description": "Hilft, Aufgaben delegierbar zu machen.",
+   "keywords": [
+    "delegation",
+    "entlastung",
+    "hr",
+    "organisation",
+    "team",
+    "übergabe"
+   ]
+  },
+  {
+   "name": "zeitmanagement-coach",
+   "department": "HR & Organisation",
+   "description": "Optimiert Kalender, Fokuszeiten und ADHS-gerechte Routinen.",
+   "keywords": [
+    "adhs",
+    "fokus",
+    "hr",
+    "organisation",
+    "routine",
+    "team",
+    "zeitmanagement"
+   ]
+  },
+  {
+   "name": "feedback-formulierer",
+   "department": "HR & Organisation",
+   "description": "Formuliert konstruktives Feedback für Gespräche.",
+   "keywords": [
+    "gespräch",
+    "hr",
+    "kritik",
+    "organisation",
+    "team",
+    "wertschätzung"
+   ]
+  },
+  {
+   "name": "email-sortierer",
+   "department": "Office & Assistenz",
+   "description": "Priorisiert und beantwortet E-Mail-Rückstände.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "email",
+    "posteingang",
+    "priorisierung"
+   ]
+  },
+  {
+   "name": "termin-koordinator",
+   "department": "Office & Assistenz",
+   "description": "Plant Termine und löst Kalenderkonflikte.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "kalender",
+    "koordination",
+    "termin"
+   ]
+  },
+  {
+   "name": "reise-planer",
+   "department": "Office & Assistenz",
+   "description": "Plant Geschäftsreisen mit Routen und Budget.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "hotel",
+    "reise",
+    "route"
+   ]
+  },
+  {
+   "name": "dokument-formatierer",
+   "department": "Office & Assistenz",
+   "description": "Bringt Dokumente in saubere, einheitliche Form.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "dokument",
+    "formatierung",
+    "vorlage"
+   ]
+  },
+  {
+   "name": "schnell-rechercheur",
+   "department": "Office & Assistenz",
+   "description": "Erledigt schnelle Alltagsrecherchen.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "info",
+    "kurzrecherche",
+    "schnell"
+   ]
+  },
+  {
+   "name": "erinnerungs-manager",
+   "department": "Office & Assistenz",
+   "description": "Strukturiert Wiedervorlagen und Deadlines.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "deadline",
+    "erinnerung",
+    "wiedervorlage"
+   ]
+  },
+  {
+   "name": "einkaufs-berater",
+   "department": "Office & Assistenz",
+   "description": "Vergleicht Anschaffungen und holt Optionen ein.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "bestellung",
+    "büro",
+    "einkauf",
+    "vergleich"
+   ]
+  },
+  {
+   "name": "vorlagen-bauer",
+   "department": "Office & Assistenz",
+   "description": "Erstellt wiederverwendbare Vorlagen und Checklisten.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "checkliste",
+    "template"
+   ]
+  },
+  {
+   "name": "daily-brief-zuarbeiter",
+   "department": "Office & Assistenz",
+   "description": "Liefert Bausteine für den morgendlichen Daily Brief.",
+   "keywords": [
+    "alltag",
+    "assistenz",
+    "büro",
+    "daily-brief",
+    "morgen",
+    "übersicht"
+   ]
+  },
+  {
+   "name": "ablage-organisator",
+   "department": "Office & Assistenz",
+   "description": "Strukturiert Dateiablagen und Benennungskonventionen.",
+   "keywords": [
+    "ablage",
+    "alltag",
+    "assistenz",
+    "benennung",
+    "büro",
+    "ordner"
+   ]
+  }
+ ]
+}
